@@ -23,10 +23,10 @@ void main() {
 	}
 
 	double pi = (4 * enter) / shoot;
-    double diff = (abs(pi - M_PI) * 100) / M_PI;
-
-    printf("In Circle %d/%d times\n", enter, shoot);
-    printf("PI Estimate: %f\n", pi);
-    printf("Expected PI: %f\n", M_PI);
-    printf("%% Diff: %f\n", diff);
+	double diff = (abs(pi - M_PI) * 100) / M_PI;
+	
+	printf("In Circle %d/%d times\n", enter, shoot);
+	printf("PI Estimate: %f\n", pi);
+	printf("Expected PI: %f\n", M_PI);
+	printf("%% Diff: %f\n", diff);
 }
