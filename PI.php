@@ -14,10 +14,10 @@ class PI {
       }
     }
     
-    $pi = (4.0 * $enter) / $shoot;
+    $pi = (4.0 * $enter) / self::$shoot;
     $diff = (abs($pi - pi()) * 100) / pi();
     
-    echo 'In Circle '.$enter.'/'.$shoot.' times<br>';
+    echo 'In Circle '.$enter.'/'.self::$shoot.' times<br>';
     echo 'PI Estimate: '.$pi.'<br>';
     echo 'Expected PI: '.pi().'<br>';
     echo '% Diff: ' + $diff.'<br>';
