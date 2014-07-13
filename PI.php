@@ -20,7 +20,7 @@ class PI {
     echo 'In Circle '.$enter.'/'.self::$shoot.' times<br>';
     echo 'PI Estimate: '.$pi.'<br>';
     echo 'Expected PI: '.pi().'<br>';
-    echo '% Diff: ' + $diff.'<br>';
+    echo '% Diff: '.$diff.'<br>';
   }
   
   private static function random() {
