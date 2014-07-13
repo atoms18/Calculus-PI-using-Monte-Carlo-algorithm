@@ -1,25 +1,29 @@
-import java.lang.Math;
+<?php
 
-public class HelloWorld {
-  private static int shoot = 10000;
+class PI {
+  private static $shoot = 10000;
   
-  public static void main(String[] args) {
-    int enter = 0;
-    for(int i = 0; i < shoot; i++) {
-      double x = Math.random() * 2 - 1;
-      double y = Math.random() * 2 - 1;
-      double distance = Math.sqrt((x * x) + (y * y));
-      if(distance < 1) {
-        enter++;
+  public static function cal() {
+    $enter = 0;
+    for($i = 0; $i < self::$shoot; $i++) {
+      $x = self::random() * 2 - 1;
+      $y = self::random() * 2 - 1;
+      $distance = sqrt(($x * $x) + ($y * $y));
+      if($distance < 1) {
+        $enter++;
       }
     }
     
-    double pi = (4D * enter) / shoot;
-    double diff = (Math.abs(pi - Math.PI) * 100) / Math.PI;
+    $pi = (4.0 * $enter) / $shoot;
+    $diff = (abs($pi - pi()) * 100) / pi();
     
-    System.out.println("In Circle " + enter + "/" + shoot + " times");
-    System.out.println("PI Estimate: " + pi);
-    System.out.println("Expected PI: " + Math.PI);
-    System.out.println("% Diff: " + diff);
+    echo 'In Circle '.$enter.'/'.$shoot.' times';
+    echo 'PI Estimate: '.$pi;
+    echo 'Expected PI: '.pi();
+    echo '% Diff: ' + $diff;
+  }
+  
+  private static function random() {
+    return mt_rand() / mt_getrandmax();
   }
 }
