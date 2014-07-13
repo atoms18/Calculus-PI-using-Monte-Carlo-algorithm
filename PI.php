@@ -17,10 +17,10 @@ class PI {
     $pi = (4.0 * $enter) / $shoot;
     $diff = (abs($pi - pi()) * 100) / pi();
     
-    echo 'In Circle '.$enter.'/'.$shoot.' times';
-    echo 'PI Estimate: '.$pi;
-    echo 'Expected PI: '.pi();
-    echo '% Diff: ' + $diff;
+    echo 'In Circle '.$enter.'/'.$shoot.' times<br>';
+    echo 'PI Estimate: '.$pi.'<br>';
+    echo 'Expected PI: '.pi().'<br>';
+    echo '% Diff: ' + $diff.'<br>';
   }
   
   private static function random() {
