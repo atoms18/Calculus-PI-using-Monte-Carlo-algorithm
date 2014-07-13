@@ -1,6 +1,6 @@
 Calculus-PI-using-Monte-Carlo-algorithm
 =======================================
 
-การหาค่าประมาญ PI โดยใช้วิธีของ Monte Carlo
+การหาค่าประมาณ PI โดยใช้วิธีของ Monte Carlo
 
 รายระเอียดเพิ่มเติมที่ http://javaboom.wordpress.com/2012/02/07/pi_arrow/
