@@ -14,7 +14,7 @@ class PI {
       }
     }
     
-    $pi = (4.0 * $enter) / self::$shoot;
+    $pi = (4 * $enter) / self::$shoot;
     $diff = (abs($pi - pi()) * 100) / pi();
     
     echo 'In Circle '.$enter.'/'.self::$shoot.' times<br>';
