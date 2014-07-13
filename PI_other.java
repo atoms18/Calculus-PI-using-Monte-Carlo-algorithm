@@ -15,6 +15,10 @@ public class PI_other {
       }
     }
     result *= 4;
-    System.out.println(result);
+    
+    double diff = (Math.abs(Math - Math.PI) * 100) / Math.PI;
+    System.out.println("PI Estimate: " + result);
+    System.out.println("Expected PI: " + Math.PI);
+    System.out.println("% Diff: " + diff);
   }
 }
